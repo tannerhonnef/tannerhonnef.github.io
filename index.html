@@ -6,7 +6,7 @@
 <html>
     <head>
         <title>
-            Tanner Honnef
+            Tanner Honnef | GIS Portfolio
         </title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,11 +19,11 @@
             }
 
             div nav ul li {
-                color:rgb(82, 82, 82);
+                color:#d3d3d3;
             }
 
             a:visited{
-                color: rgb(82, 82, 82);
+                color: #d3d3d3;
             }
 
             a:hover{
@@ -84,16 +84,23 @@
 /* things that are added for class END  */
                     
         </style>
+                <div class = "navbar" id = "navbar">
+                    <nav>
+                        <ul>
+                            <li> <a href = "#Educ">Education</a>  
+                                <a href = "#Back">Background</a>    
+                                <a href ="portfolio.html"> Portfolio</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
         <link rel="stylesheet" href="css/intro.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/footer.css">
     </head>
 
 
-    <body>
-<!-- These are edits that are for class and will be removed after I ahve figured out how to do what i wanted to do -->
-        <div class="nav_bar_header1"><h1>Hello</h1></div>
-        <div class="nav_bar_header2"><h1>I'm a Geospatial Scientist</h1></div>
+    <body class = "body" id = "body">
 
         
         <script>
@@ -127,19 +134,6 @@
                 toggleHeaders();
             };
         </script>
-        
-        
-        <div class="gallery-item">
-            <img src="images\marmot.jpeg", width = 400px, 
-            alt="A picture of a marmot" class="gallery-img">
-            <figcaption style="font-size: 50px;">Marmot</figcaption>
-        </div>
-    
-        <div  class="myPop">
-            <span class="close">&times;</span>
-            <img id="img_pop" style="margin-top: 10rem;">
-            <h1 id = "h1_pop"></h1>
-        </div>
        
        
         <script>
@@ -171,56 +165,60 @@
             // end of added code for assignment 4 close button
         </script>
 
-
-
-        <!-- a4 button material -->
-        <button onclick = "document.getElementById('email').textContent='tannerhonnef@gmail.com'";>Reveal my Email!</button>
-        <p id = "email"></p>
-
-
-
-        <button onclick = "document.getElementById('boldemail').textContent='tannerhonnef@gmail.com'";>Reveal my Email in Bold!</button>
-        <p id = "boldemail" style="font-weight: bold;"></p>
-        <!-- end of a4 button -->
-
-        <!-- this is the end of the code that has been inputted for class -->
-        <div class = "navbar" id = "navbar">
-            <nav>
-                <ul>
-                    <li> <a href = "#Educ">Education</a>  
-                        <a href = "#Back">Background</a>    
-                        <a href ="#Pro"> Projects</a>
-                </li>
-                </ul>
-            </nav>
+        <div style="padding: 2%; background-color: rgb(67, 66, 71); margin: 0; display: flex; align-items: center;">
+            <div style="background-color: rgb(80, 85, 90); max-width: 70%; padding: 10px; flex: 1; margin-right: 300px; margin-left: 100px"> <!-- Text container first -->
+                <h1 style="color: #d3d3d3; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50pt;">Tanner Honnef</h1>
+                <p style="color: #d3d3d3; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 20pt;">Welcome to my website! I am a student at Clark University pursuing my Masters in Geographic Information Science. I anticipate graduating in the Spring of 2025. I am interested in Land Change Modeling, Remote Sensing, and Urban Forestry.</p>
+            </div>
+            <div class="image_container" style="flex: 0 0 auto; margin-left: 200px;"> <!-- Image container second -->
+                <a href = "https://lcluc.umd.edu/projects/irrigation-climate-change-adaptation-cerrado-biome-brazil-evaluated-new-quantitative">
+                <img src="images/SITEPHOTO.PNG" width="400px"></a>
+            </div>
         </div>
 
-        <br/>
-
-        <div class = "intro" id = "intro">
-            <h1 style="font-size:55px" class = "intro_paragraph"> Welcome to my website</h1>
-            <h2> This website will be updated as I work through web mapping.  Check back later to see the final product!!</h2>
-            <h3> In the meantime, I recommend you check out my <a href="https://www.linkedin.com/in/tanner-honnef-425683186/">LinkedIn</a> or email me at <a href="mailto:thonnef@clarku.edu"> thonnef@clarku.edu </a> </h3>
-        </div>
-
-
-
-        <div class = "education" id = "education"></div>
-            <h1 style = "font-size:50px; color:blue" id = "Educ"> Education </h1>
-            <p><strong><em> Here are some paragraphs that are describing my education.</em></strong></p>
+        <div style = "padding: 2%; background-color: white;">
+            <h1 style = "font-size:50px; color:rgb(67, 66, 71); font-family: Arial, Helvetica, sans-serif;" id = "Educ"> Education </h1>
+            <p><strong>Clark University BA '24 MS GIS '25 (Anticipated)</strong></p>
+            <li>
+                Major: Geograpy <li>Minors: Data Science and Environmental Science</li>
+                <li>Summa cum laude</li>
+                <li>Dean's List all semesters</li>
+                <li>Highest Honors in Geography
+                    <li style="font-size:14px">-  Honor's Thesis: The Total Operating Characteristic requires improvements to its use and software.</li></li>
+            </li>
+            <br/>
+            <li style="font-size:24px">Awards</li>
+            <br/>
+            <li>Paul P. Vouras '51 Social Science Award</li>
+            <p>The Paul P. Vouras Social Science Award, established by Paul P. Vouras ’51, is awarded annually to an outstanding student majoring in the social sciences. The recipient has proven excellence in the major as well as breadth and strength in the program within the social sciences.</p>
+            <li>Clark Labs Geographic Information Science Excellence Award</li>
+            <p>This award is given to an outstanding geography major who shows excellence in the field of geographic information science. This award is given by geography but funded by Clark Labs. (Formerly the IDRISI Excellence in Geographic Information Science Award).</p>
+            <li>Russ Granger Award</li>
+            <p>Presented to the senior/graduate male student-athlete who has combined academic excellence with athletic achievement - the quality of their education and performance in both disciplines exemplifies the term ‘scholar-athlete’.</p>
         </div>
 
 
 
-        <div class = "background" id = "background"></div>
-            <h1 style="font-size:50px; color:blue" id = "Back"> Background </h1>
-            <p> Here are some paragraphs that are describing my background. </p>
+        <div style = "background-color: rgb(67, 66, 71); color: #d3d3d3; padding: 2%;" id = "background">
+            <h1 style="font-size:50px; color:#d3d3d3; font-family: Arial, Helvetica, sans-serif;" id = "Back"> Experience </h1>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Fall 2024</h2>
+            <li>Course Assistant: GIS & Land Change Models</li>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2024</h2>
+            <li>Graduate Student Manager: Human Environment Regional Observatory</li>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Spring 2024</h2>
+            <li>Research Assistant: Multitemporal analysis and determination of mangrove cover in the Coastal Region of Ecuador (1999-2022)</li>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Fall 2023</h2>
+            <li>Peer Learning Assistant: GIS & Land Change Models</li>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2023</h2>
+            <li>Undergraduate Fellow: Human Environmental Regional Observatory</li>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2022</h2>
+            <li>Undergraduate Fellow: Peter J. Condakes Fellowship</li>
         </div>
 
 
 
-        <div class = "project" id = "project"></div>
-            <h1 style="font-size:50px; color:blue" id = "Pro"> Project </h1>
+        <div class = "project" id = "project" style="background-color: white;">
+            <h1 style="font-size:50px; color:rgb(67,66,71); font-family: Arial, Helvetica, sans-serif;" id = "Pro"> Projects </h1>
             <p> Here are some paragraphs that are describing my projects. </p>
         </div>
 

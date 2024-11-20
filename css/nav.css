@@ -1,22 +1,47 @@
-.navbar{
-    background-color: rgb(199, 213, 213);
-    border: solid, grey;
-    border-width: 10px;
-    margin-top: 20px;
-    padding-top: 10px;
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: rgb(67, 66, 71);
+    border-width: 0px;
+    width: 100%;
+    padding: 0 0px; /* Adds padding to the left and right only */
+    color: #d3d3d3;
     font-size: 30pt;
-    margin-right: 15px;
+    margin-right: 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    word-spacing: 50px;
 }
 
-li a{
-    margin-right: 20px;
+.navbar a {
+    color: #d3d3d3; /* Ensures links in the navbar are the correct color */
     text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ffffff; /* Optional: Change color on hover for better UX */
 }
 
 li {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+}
+
+body {
+    padding-top: 120px;
+    background-color: rgb(67, 66, 71);
+    color: #d3d3d3; /* Default text color matches the design */
+}
+
+.image_container {
+    margin-left: 80%; /* Set left margin */
+    transform: translateX(-80%); /* Shift back to center the image */
+    position: relative;
+}
+
+footer {
+    background-color: blue;
+    color: white; /* Text color for footer */
 }

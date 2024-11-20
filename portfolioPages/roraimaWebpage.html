@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <style>
+    
+  </style>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <div class = "navbar" id = "navbar">
+        <nav>
+            <ul>
+                <li> <a href = "../index.html">Education</a>  
+                    <a href = "../index.html">Background</a>    
+                    <a href = "../portfolio.html"> Portfolio</a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../thumbnails/roraimaThumbnail.png" alt="Project Image">
+      <div class="content">
+        <h1>Forest Loss Model Development for Roraima, Brazil</h1>
+        <h2>Using Geomod in IDRISI TerrSet</h2>
+        <button onclick="window.open('../docs/landChangeModelsFinalProject.pdf')">Final Project Presentation</button>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-row">
+        <div class="info-box">
+          <h3>Team Members:</h3>
+          <p>Andrew Niehaus, Tanner Honnef, Annabel Krugman, Will Verde, and Sophie Hayes</p>
+        </div>
+        <div class="info-box">
+          <h3>Affiliation:</h3>
+          <p>GEOG 260: GIS & Land Change Models</p>
+        </div>
+      </div>
+
+      <div class="description">
+        <h3>Project Description:</h3>
+        <p>This project uses Mapbiomas landcover data for Roramia, Brazil to develop a forest loss model for the region.  The project uses different length calibration and validation periods to find out which yields the highest figure of merit for the model of the study area.  In addition, it considers which driver varibles give the model the highest predictive accuracy.  The model with the highest figure of merit from the 12 models run was the model with a 15 year calibration period using the drivers Elevation, Slope, Indigenous lands, Protection, Rivers, Land Cover, and Population Density.  In addition, a multi resolution analysis was performed to analyze how the hits, misses, and false alarms would vary if the data were at different resolutions.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
