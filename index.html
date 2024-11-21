@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <title>
@@ -34,23 +30,18 @@
                 background-color: red;
             }
 
-/* things added for class */
             .nav_bar_header1, .nav_bar_header2 {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
-                opacity: 0; /* Initially hidden */
-                transition: opacity 1s ease-in-out; /* Smooth fade */
+                opacity: 0; 
+                transition: opacity 1s ease-in-out; 
             }
 
             .show {
-                opacity: 1; /* Make visible when the .show class is added */
+                opacity: 1; 
             }
-
-
-
-
 
             .myPop{
                 display: None;
@@ -80,15 +71,13 @@
                 text-decoration: none;
                 cursor: pointer;
             }
-
-/* things that are added for class END  */
                     
         </style>
                 <div class = "navbar" id = "navbar">
                     <nav>
                         <ul>
                             <li> <a href = "#Educ">Education</a>  
-                                <a href = "#Back">Background</a>    
+                                <a href = "#Back">Experience</a>    
                                 <a href ="portfolio.html"> Portfolio</a>
                         </li>
                         </ul>
@@ -171,16 +160,31 @@
             gtag('config', 'G-PNC0MQ8P0J');
         </script>
 
-        <div style="padding: 2%; background-color: rgb(67, 66, 71); margin: 0; display: flex; align-items: center;">
-            <div style="background-color: rgb(80, 85, 90); max-width: 70%; padding: 10px; flex: 1; margin-right: 300px; margin-left: 100px"> <!-- Text container first -->
-                <h1 style="color: #d3d3d3; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50pt;">Tanner Honnef</h1>
-                <p style="color: #d3d3d3; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 20pt;">Welcome to my website! I am a student at Clark University pursuing my Masters in Geographic Information Science. I anticipate graduating in the Spring of 2025. I am interested in Land Change Modeling, Remote Sensing, and Urban Forestry.</p>
+        <div style="padding: 2%; background-color: rgb(67, 66, 71); margin: 50px; display: flex; align-items: center;">
+            <!-- Text container (left side) -->
+            <div style="background-color: rgb(80, 85, 90); flex: 1; padding: 10px; margin-right: 100px;"> 
+                <h1 style="color: #d3d3d3; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50pt;">
+                    Tanner Honnef
+                </h1>
+                <p style="color: #d3d3d3; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 20pt;">
+                    Welcome to my website! I am a student at Clark University pursuing my Masters in Geographic Information Science.
+                    I anticipate graduating in the Spring of 2025. I am interested in Land Change Modeling, Remote Sensing, and Urban Forestry.
+                </p>
             </div>
-            <div class="image_container" style="flex: 0 0 auto; margin-left: 200px;"> <!-- Image container second -->
-                <a href = "https://lcluc.umd.edu/projects/irrigation-climate-change-adaptation-cerrado-biome-brazil-evaluated-new-quantitative">
-                <img src="images/SITEPHOTO.PNG" width="400px"></a>
+
+            <!-- Image container (right side) -->
+            <div class="image_container" style="flex-shrink: 0; width: 250px; margin-left: 200px;">
+                <!-- Link to project (optional) -->
+                <a href="https://lcluc.umd.edu/projects/irrigation-climate-change-adaptation-cerrado-biome-brazil-evaluated-new-quantitative">
+                    <img src="images/SITEPHOTO.PNG" width="350px" alt="Project Image">
+                </a>
             </div>
         </div>
+
+
+
+
+
 
         <div style = "padding: 2%; background-color: white;">
             <h1 style = "font-size:50px; color:rgb(67, 66, 71); font-family: Arial, Helvetica, sans-serif;" id = "Educ"> Education </h1>
@@ -222,39 +226,14 @@
         </div>
 
 
-
-        <div class = "project" id = "project" style="background-color: white;">
-            <h1 style="font-size:50px; color:rgb(67,66,71); font-family: Arial, Helvetica, sans-serif;" id = "Pro"> Projects </h1>
-            <p> Here are some paragraphs that are describing my projects. </p>
-        </div>
-
-
-
-
-        <div class = "random" id = "random">
-            <figure>
-                <a href="https://www.clarku.edu/" target = "_blank">
-                    <img src="images/marmot.jpeg" width = 400px alt = 'Marmot'>
-                <figcaption>A fun picture of a marmot</figcaption>
-                </a>
-            </figure>
-
-            <br/>
-            <br/>
-            
-            <p style="background-image: url('images/marmot.jpeg')">Clark University is a private research <br> university in Worcester, Massachusetts. Founded in 1887 <br> with a large endowment from its namesake Jonas Gilman <br> Clark, a prominent businessman, Clark was one of the first <br> modern research universities in the United States.</p>    
-        </div>
-
-
-
-
-
-
-        <button class = 'change_bk' style = "height: 100px; width: 250px;"> Click here to highlight my past expereinces</button>
-
-        <div class = "change_color">
-            <h1>This is the intro</h1>
-            <p>Welcome to my <a href="https://tannerhonnef.github.io/"> Personal Website</a>, this is my <a href="https://github.com/tannerhonnef/resume">po website.</a></p>
+        <div style="background-color: #333; color: #d3d3d3; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                © 2024 Tanner Honnef | GIS Portfolio
+            </p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+                <a href="mailto:tannerhonnef@gmail.com" style="color: #d3d3d3; text-decoration: none;">Contact Me</a> | 
+                <a href="https://www.linkedin.com/in/tanner-honnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">LinkedIn</a>
+            </p>
         </div>
 
         <script>
@@ -274,28 +253,5 @@
                 back_g = !back_g;
             }
         </script>
-
-
-
-
-
-
-
-        <!-- this is a comment which was made by pressing command + / -->
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <footer class="footer">
-            <p>Tanner Honnef</p>
-            <p> <a href="mailto:THonnef@clarku.edu">THonnef@clarku.edu</a></p>
-            <div> <button id ="backtoTop">Back To Top</button>
-            </div>
-        </footer>
-
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchIWB0JTvMi_H8Uy9IzbwDj2TXQ5NMzo_xI5lQnm46wB1wJA/viewform?embedded=true" width="640" height="381" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-        <script src="" async defer></script>
-        <script src="jsTest.js"></script>
     </body>
 </html>
