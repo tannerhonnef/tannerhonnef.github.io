@@ -4,8 +4,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    padding-top: 200px;
+    background-color: rgb(67, 66, 71);
+    padding-top: 150px;
   }
 
   .container {
