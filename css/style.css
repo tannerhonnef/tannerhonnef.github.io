@@ -27,5 +27,32 @@ h5 {
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
+  }
+  
+  h5 a {
+    text-decoration: underline;
+    text-decoration-color: #ffffff; /* Makes the underline white */
+    color: inherit; /* Matches the h5 text color */
+  }
+  
+  h5 a:link,
+  h5 a:visited,
+  h5 a:hover,
+  h5 a:active {
+    text-decoration: underline !important; /* Force the underline */
+    text-decoration-color: #ffffff !important; /* Ensure the underline is white */
+    color: inherit; /* Keep text color consistent */
+  }
 
+  a {
+    text-decoration: none; /* Remove the underline for all links */
+    color: inherit; /* Inherit the parent color (e.g., h5 text color) */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none; /* No underline for any state */
+    color: inherit; /* Match text color */
 }
