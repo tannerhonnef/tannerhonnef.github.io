@@ -6,7 +6,6 @@
         </title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -219,96 +218,31 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+
+            body{
+                padding: 0;
+                margin: 0;
+            }
                     
         </style>
-                <div class = "navbar" id = "navbar">
-                    <nav style="padding: 15px;">
+                <div class = "navbar">
+                    <nav>
                         <ul>
-                            <li style="font-size: 40px;"><a href = "index.html">Home</a>   
-                                <a href = "resume.html">Resume</a>  
-                                <a href ="portfolio.html"> Portfolio</a>
+                            <li><a href = "index.html">Home</a></li>   
+                                <li><a href = "resume.html">Resume</a></li>
+                                <li><a href ="portfolio.html"> Portfolio</a></li>
                         </li>
                         </ul>
                     </nav>
                 </div>
         <link rel="stylesheet" href="css/intro.css">
-        <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/nav.css">
     </head>
 
 
     <body class = "body" id = "body">
-
-        
-        <script>
-            window.onload = function() {
-            // Get headers
-                const header1 = document.querySelector(".nav_bar_header1");
-                const header2 = document.querySelector(".nav_bar_header2");
-
-                let isHeader1Visible = true; // Start with header1 visible
-
-                // Function to toggle between headers
-                function toggleHeaders() {
-                    if (isHeader1Visible) {
-                        // Show header1, hide header2
-                        header1.classList.add("show");
-                        header2.classList.remove("show");
-                    } else {
-                        // Show header2, hide header1
-                        header2.classList.add("show");
-                        header1.classList.remove("show");
-                    }
-
-                    // Switch to the other header for the next cycle
-                    isHeader1Visible = !isHeader1Visible;
-
-                    // Repeat the toggle every 4 seconds
-                    setTimeout(toggleHeaders, 4000);
-                }
-
-                // Start the toggle cycle
-                toggleHeaders();
-            };
-        </script>
-       
-       
-        <script>
-            // Get the image and insert it inside the modal
-            const images = document.getElementsByClassName("gallery-img");
-            // const captionText = document.getElementById("caption");
-            
-            const pop_w = document.getElementsByClassName("myPop")[0];
-            const pop_Img = document.getElementById("img_pop");
-            const pop_h1 = document.getElementById("h1_pop");
-
-
-            // Loop through all gallery images
-            for (let i = 0; i < images.length; i++) {
-                images[i].onclick = function() {
-                    pop_w.style.display = "block";
-                    pop_Img.src = this.src;
-                    pop_h1.innerHTML = this.alt
-                }
-            }
-
-
-            // added code for assignment 4 close button
-            const close_button = document.getElementsByClassName("close")[0];
-
-            close_button.onclick = function(){
-                pop_w.style.display = "none";
-            }
-            // end of added code for assignment 4 close button
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PNC0MQ8P0J');
-        </script>
-
-        <div class="container" style="padding-top: 20px;">
+        <div class="container" style="padding-top: 30px;">
             <h1>Experience</h1>
 
             <div class="section">
@@ -392,7 +326,6 @@
             </a>
         </div>
         <br/>
-
         <div style="background-color: #333; color: #d3d3d3; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
             <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                 © 2024 Tanner Honnef | GIS Portfolio
@@ -404,4 +337,5 @@
             </p>
         </div>
     </body>
+
 </html>

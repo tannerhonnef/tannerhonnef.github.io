@@ -1,13 +1,35 @@
+.navbar nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
+    padding: 25px; /* Remove default padding */
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+}
+
+.navbar nav ul li {
+    margin: 0 30px; /* Add spacing between items */
+}
+
+.navbar nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #d3d3d3; /* Link color */
+    font-size: 40px; /* Adjust font size */
+}
+
+.navbar nav ul li a:hover {
+    color: white; /* Change color on hover */
+}
+
 .navbar {
     position: fixed;
     top: 0;
     background-color: rgb(67, 66, 71);
     border-width: 0px;
     width: 100%;
-    padding: 0 0px; /* Adds padding to the left and right only */
     color: #d3d3d3;
     font-size: 30pt;
     margin-right: 0px;
+    margin-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
