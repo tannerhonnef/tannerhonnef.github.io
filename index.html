@@ -71,14 +71,91 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                background-color: #ffffff;
+                height: 100vh;
+            }
+
+            .card {
+                display: flex;
+                max-width: 900px;
+                background-color: white;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .image-section {
+                flex: 1;
+                background: url('images/profilePhoto.JPG') no-repeat center center;
+                background-size: cover;
+                min-height: 500px;
+            }
+            
+            .image-wrapper {
+                flex: 1;
+                padding: 80px;
+                box-sizing: border-box;
+            }
+
+            .text-section {
+                flex: 1;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .text-section h2 {
+                font-size: 28px;
+                color: #8a2be2;
+                margin-bottom: 20px;
+            }
+
+            .text-section p {
+                font-size: 16px;
+                color: #333;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            .button {
+                text-decoration: none;
+                color: white; /* Ensure text is visible on the dark background */
+                border: 2px solid rgb(67, 66, 61);
+                border-radius: 20px;
+                padding: 15px 30px; /* Adjust padding for taller height and narrower width */
+                font-size: 16px;
+                display: block; /* Allows centering */
+                text-align: center; /* Center text inside the button */
+                transition: all 0.3s ease;
+                background-color: rgb(67, 66, 61);
+                margin: 0 auto; /* Centers the button horizontally */
+                width: fit-content; /* Adjusts width to fit the content precisely */
+            }
+
+            .button:hover {
+                background-color: white;
+                color: rgb(67, 66, 71);
+            }
                     
         </style>
                 <div class = "navbar" id = "navbar">
                     <nav>
                         <ul>
-                            <li> <a href = "#Educ">Education</a>  
-                                <a href = "#Back">Experience</a>    
-                                <a href ="portfolio.html"> Portfolio</a>
+                            <li><a href = "index.html">Home</a>   
+                                <a href = "resume.html">Resume</a>  
+                                <a href ="portfolio.html">Portfolio</a>
                         </li>
                         </ul>
                     </nav>
@@ -160,9 +237,9 @@
             gtag('config', 'G-PNC0MQ8P0J');
         </script>
 
-        <div style="padding: 2%; background-color: rgb(67, 66, 71); margin: 50px; display: flex; align-items: center;">
+        <div style="padding: 2%; background-color: rgb(67, 66, 71); margin: 50px; display: flex; align-items: center; padding-top: 40px;">
             <!-- Text container (left side) -->
-            <div style="background-color: rgb(80, 85, 90); flex: 1; padding: 10px; margin-right: 100px;"> 
+            <div style="background-color: rgb(80, 85, 90, .8); flex: 1; padding: 20px; margin-right: 100px; z-index: 2;"> 
                 <h1 style="color: #d3d3d3; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50pt;">
                     Tanner Honnef
                 </h1>
@@ -172,72 +249,21 @@
                 </p>
             </div>
 
-            <!-- Image container (right side) -->
-            <div class="image_container" style="flex-shrink: 0; width: 300px; margin-left: 200px;">
-                <!-- Link to project (optional) -->
+            <div class="image_container" style="flex-shrink: 0; width: 400px; margin-left: 100px; z-index: 1;">
                 <a href="https://lcluc.umd.edu/projects/irrigation-climate-change-adaptation-cerrado-biome-brazil-evaluated-new-quantitative">
-                    <img src="images/SITEPHOTO.PNG" width="500px" alt="Project Image">
+                    <img src="images/SITEPHOTO2.PNG" width="700px" alt="Project Image">
                 </a>
             </div>
         </div>
 
-        <div style="padding: 2%; background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-            <h1 style="font-size: 50px; color: rgb(67, 66, 71); font-family: Arial, Helvetica, sans-serif; text-align: left; margin-bottom: 20px;" id="Educ">Education</h1>
-            <p style="text-align: left; font-size: 18px; margin-bottom: 20px;color: rgb(67, 66, 71);">
-                <strong>Clark University BA '24 | MS GIS '25 (Anticipated)</strong>
-            </p>
-        
-            <ul style="list-style-type: none; padding: 0; font-size: 18px; line-height: 1.8; color: rgb(67, 66, 71);">
-                <li><strong>Major:</strong> Geography</li>
-                <li><strong>Minors:</strong> Data Science and Environmental Science</li>
-                <li><strong>Summa Cum Laude</strong></li>
-                <li><strong>Dean's List:</strong> All semesters</li>
-                <li><strong>Highest Honors in Geography:</strong>
-                    <ul style="list-style-type: disc; margin-left: 20px; font-size: 16px; color: rgb(90, 90, 90);">
-                        <li>Honor's Thesis: The Total Operating Characteristic requires improvements to its use and software.</li>
-                    </ul>
-                </li>
-            </ul>
-        
-            <br/>
-        
-            <h2 style="font-size: 30px; color: rgb(67, 66, 71); margin-bottom: 10px; text-align: left;">Awards</h2>
-        
-            <ul style="list-style-type: none; padding: 0; font-size: 18px; line-height: 1.8; color: rgb(67, 66, 71);">
-                <li><strong>Paul P. Vouras '51 Social Science Award</strong></li>
-                <p style="margin-left: 20px; font-size: 16px; color: rgb(90, 90, 90);">
-                    Awarded annually to an outstanding student majoring in the social sciences. The recipient has proven excellence in the major as well as breadth and strength in the program within the social sciences.
-                </p>
-        
-                <li><strong>Clark Labs Geographic Information Science Excellence Award</strong></li>
-                <p style="margin-left: 20px; font-size: 16px; color: rgb(90, 90, 90);">
-                    Given to an outstanding geography major who shows excellence in the field of geographic information science. This award is funded by Clark Labs.
-                </p>
-        
-                <li><strong>Russ Granger Award</strong></li>
-                <p style="margin-left: 20px; font-size: 16px; color: rgb(90, 90, 90);">
-                    Presented to the senior/graduate male student-athlete who has combined academic excellence with athletic achievement.
-                </p>
-            </ul>
-        </div>
-        
-
-
-
-        <div style = "background-color: rgb(67, 66, 71); color: #d3d3d3; padding: 2%;" id = "background">
-            <h1 style="font-size:50px; color:#d3d3d3; font-family: Arial, Helvetica, sans-serif;" id = "Back"> Experience </h1>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Fall 2024</h2>
-            <li>Course Assistant: GIS & Land Change Models</li>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2024</h2>
-            <li>Graduate Student Manager: Human Environment Regional Observatory</li>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Spring 2024</h2>
-            <li>Research Assistant: Multitemporal analysis and determination of mangrove cover in the Coastal Region of Ecuador (1999-2022)</li>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Fall 2023</h2>
-            <li>Peer Learning Assistant: GIS & Land Change Models</li>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2023</h2>
-            <li>Undergraduate Fellow: Human Environmental Regional Observatory</li>
-            <h2 style="font-family: Arial, Helvetica, sans-serif;color: #d3d3d3;text-decoration: underline;size: 24px;">Summer 2022</h2>
-            <li>Undergraduate Fellow: Peter J. Condakes Fellowship</li>
+            <div class="container">
+                <div class="image-wrapper">
+                  <div class="image-section"></div></div>
+                  <div class="text-section">
+                    <h2 style = "color: rgb(67, 66, 71); font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50pt;">ABOUT ME</h2>
+                    <p style = "color: rgb(67, 66, 71); font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 15pt;">Hi! My name is Tanner Honnef and I am currently working as a Course Assistant for GIS & Land Change Models.  In the spring, I will be starting a research assistant position where I will be researching the potential impacts on biodiversity of a Chinese funded megaport in Peru.</p>
+                    <a href="resume.html" class="button">Resume</a>
+              </div>
         </div>
 
 
@@ -247,7 +273,8 @@
             </p>
             <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
                 <a href="mailto:tannerhonnef@gmail.com" style="color: #d3d3d3; text-decoration: none;">Contact Me</a> | 
-                <a href="https://www.linkedin.com/in/tanner-honnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/tanner-honnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/tannerhonnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">GitHub</a>
             </p>
         </div>
 

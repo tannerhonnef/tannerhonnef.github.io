@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tanner Honnef | GIS Portfolio
+        </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #121212;
+                color: #d3d3d3;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            h1, h2 {
+                color: #ffffff;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 10px;
+                color: #00adb5;
+            }
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+                color: #d3d3d3;
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-size: 18px;
+                color: #d3d3d3;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                font-size: 18px;
+                color: #d3d3d3;
+            }
+
+            li {
+                margin-bottom: 12px;
+            }
+
+            li strong {
+                color: #00adb5;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+
+            .section {
+                margin-bottom: 40px;
+                border-left: 4px solid #00adb5;
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+
+            .section h2 {
+                color: #ffffff; /* Time color under experience */
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .section li {
+                font-size: 20px;
+            }
+
+            .education-container li{
+                color: #434247
+            }
+            .education-container {
+                padding: 3%;
+                background-color: #ffffff;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                margin-top: 50px;
+            }
+
+            .education-container h1 {
+                color: #434247;
+                font-size: 48px;
+            }
+
+            .education-container p {
+                color: #434247;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .education-container ul {
+                margin-left: 20px;
+            }
+
+            .education-container ul li {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .education-container ul ul {
+                font-size: 16px;
+                color: #5a5a5a;
+            }
+
+            .education-container ul ul li {
+                margin-bottom: 6px;
+            }
+
+            .awards-container ul {
+                margin-left: 20px;
+            }
+
+            .awards-container ul li {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .awards-container li strong {
+                font-size: 20px;
+                color: #ffffff;
+            }
+            
+            .awards-container p {
+                margin-left: 20px;
+                font-size: 16px;
+                color: #d3d3d3;
+            }
+
+            footer {
+                background-color: #1c1c1c;
+                padding: 15px 0;
+                text-align: center;
+                color: #a9a9a9;
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 36px;
+                }
+                h2 {
+                    font-size: 22px;
+                }
+            }
+            .intro_paragraph{
+                color: teal
+            }
+
+            div nav ul li {
+                color:#d3d3d3;
+            }
+
+            a:visited{
+                color: #d3d3d3;
+            }
+
+            a:hover{
+                cursor: pointer;
+            }
+
+            .highlight_e {
+                background-color: red;
+            }
+
+            .nav_bar_header1, .nav_bar_header2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                opacity: 0; 
+                transition: opacity 1s ease-in-out; 
+            }
+
+            .show {
+                opacity: 1; 
+            }
+
+            .myPop{
+                display: None;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width:100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(252, 252, 252);
+                text-align: center;
+                border: solid;
+            }
+
+            .close{
+                position: absolute;
+                top: 5rem;
+                right: 10rem;
+                color: #0d27d0;
+                font-size: 10rem;
+                font-weight: bold;
+            }
+
+            .close:hover,.close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+                    
+        </style>
+                <div class = "navbar" id = "navbar">
+                    <nav style="padding: 15px;">
+                        <ul>
+                            <li style="font-size: 40px;"><a href = "index.html">Home</a>   
+                                <a href = "resume.html">Resume</a>  
+                                <a href ="portfolio.html"> Portfolio</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+        <link rel="stylesheet" href="css/intro.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+
+    <body class = "body" id = "body">
+
+        
+        <script>
+            window.onload = function() {
+            // Get headers
+                const header1 = document.querySelector(".nav_bar_header1");
+                const header2 = document.querySelector(".nav_bar_header2");
+
+                let isHeader1Visible = true; // Start with header1 visible
+
+                // Function to toggle between headers
+                function toggleHeaders() {
+                    if (isHeader1Visible) {
+                        // Show header1, hide header2
+                        header1.classList.add("show");
+                        header2.classList.remove("show");
+                    } else {
+                        // Show header2, hide header1
+                        header2.classList.add("show");
+                        header1.classList.remove("show");
+                    }
+
+                    // Switch to the other header for the next cycle
+                    isHeader1Visible = !isHeader1Visible;
+
+                    // Repeat the toggle every 4 seconds
+                    setTimeout(toggleHeaders, 4000);
+                }
+
+                // Start the toggle cycle
+                toggleHeaders();
+            };
+        </script>
+       
+       
+        <script>
+            // Get the image and insert it inside the modal
+            const images = document.getElementsByClassName("gallery-img");
+            // const captionText = document.getElementById("caption");
+            
+            const pop_w = document.getElementsByClassName("myPop")[0];
+            const pop_Img = document.getElementById("img_pop");
+            const pop_h1 = document.getElementById("h1_pop");
+
+
+            // Loop through all gallery images
+            for (let i = 0; i < images.length; i++) {
+                images[i].onclick = function() {
+                    pop_w.style.display = "block";
+                    pop_Img.src = this.src;
+                    pop_h1.innerHTML = this.alt
+                }
+            }
+
+
+            // added code for assignment 4 close button
+            const close_button = document.getElementsByClassName("close")[0];
+
+            close_button.onclick = function(){
+                pop_w.style.display = "none";
+            }
+            // end of added code for assignment 4 close button
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PNC0MQ8P0J');
+        </script>
+
+        <div class="container" style="padding-top: 20px;">
+            <h1>Experience</h1>
+
+            <div class="section">
+                <h2>Fall 2024</h2>
+                <li>Course Assistant: GIS & Land Change Models</li>
+                <p>As the course assistant for GIS & Land Change Models, I assisted students with comprehension of concepts and assignments during office hours. I also helped grade assignments for the 33 students in the course.</p>
+            </div>
+
+            <div class="section">
+                <h2>Summer 2024</h2>
+                <li>Graduate Student Manager: Human Environment Regional Observatory</li>
+                <p>As one of the Graduate Student Managers for the Human Environmental Regional Observatory, I facilitated data collection, analysis, and the presentation of trees planted as part of the Greening the Gateway Cities Program in Holyoke and Chelsea. This culminated in a presentation and report to the Massachusetts Department of Conservation and Recreation.</p>
+            </div>
+
+            <div class="section">
+                <h2>Spring 2024</h2>
+                <li>Research Assistant: Multitemporal Analysis of Mangrove Cover in the Coastal Region of Ecuador (1999–2022)</li>
+                <p>As a research assistant working with mangrove cover in the Coastal Region of Ecuador, I prepared a report and presentation on the development of mangroves and aquaculture across five time points. This project was completed under the supervision of Professors Sangermano and Rogan for Cámara Nacional de Acuacultura in Ecuador.</p>
+            </div>
+
+            <div class="section">
+                <h2>Fall 2023</h2>
+                <li>Peer Learning Assistant: GIS & Land Change Models</li>
+                <p>As the peer learning assistant for GIS & Land Change Models, I assisted students with comprehension of concepts and assignments during office hours. I also helped to write exam questions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Summer 2023</h2>
+                <li>Undergraduate Fellow: Human Environmental Regional Observatory</li>
+                <p>As an undergraduate fellow in the Human Environmental Regional Observatory, I participated in data collection, analysis, and presentation of a report on the status of the replanting effort in Worcester, MA following the Longhorned Beetle infestation, which led to the cutting of over 25,000 trees from 2008–2009.</p>
+            </div>
+
+            <div class="section">
+                <h2>Summer 2022</h2>
+                <li>Undergraduate Fellow: Peter J. Condakes Fellowship</li>
+                <p>As an undergraduate fellow with the Peter J. Condakes fellowship, I collaborated with consulting agencies and a governing organization on research concerning REDD projects.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="education-container">
+                <h1>Education</h1>
+                <p><strong>Clark University BA '24 | MS GIS '25 (Anticipated)</strong></p>
+                <ul>
+                    <li><strong>Major:</strong> Geography</li>
+                    <li><strong>Minors:</strong> Data Science and Environmental Science</li>
+                    <li><strong>Summa Cum Laude</strong></li>
+                    <li><strong>Dean's List:</strong> All semesters</li>
+                    <li><strong>Highest Honors in Geography:</strong>
+                        <ul>
+                            <li>Honor's Thesis: The Total Operating Characteristic requires improvements to its use and software.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+    
+            <div class="awards-container">
+                <h1>Awards</h1>
+                <ul>
+                    <li><strong>Paul P. Vouras '51 Social Science Award</strong></li>
+                    <p>Awarded annually to an outstanding student majoring in the social sciences. The recipient has proven excellence in the major as well as breadth and strength in the program within the social sciences.</p>
+    
+                    <li><strong>Clark Labs Geographic Information Science Excellence Award</strong></li>
+                    <p>Given to an outstanding geography major who shows excellence in the field of geographic information science. This award is funded by Clark Labs.</p>
+    
+                    <li><strong>Russ Granger Award</strong></li>
+                    <p>Presented to the senior/graduate male student-athlete who has combined academic excellence with athletic achievement.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 20px;">
+            <a href="/docs/thonnefResume.pdf" target = "_blank">
+                <button style="background-color: #00adb5; color: white; padding: 10px 20px; font-size: 20px; border: none; border-radius: 5px; cursor: pointer;">
+                    Download Resume
+                </button>
+            </a>
+        </div>
+        <br/>
+
+        <div style="background-color: #333; color: #d3d3d3; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                © 2024 Tanner Honnef | GIS Portfolio
+            </p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+                <a href="mailto:tannerhonnef@gmail.com" style="color: #d3d3d3; text-decoration: none;">Contact Me</a> | 
+                <a href="https://www.linkedin.com/in/tanner-honnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/tannerhonnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </body>
+</html>
