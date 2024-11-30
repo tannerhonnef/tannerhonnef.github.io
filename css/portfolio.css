@@ -52,7 +52,7 @@ body {
 
   .header button {
     padding: 10px 20px;
-    background-color: #8a2be2;
+    background-color: #00adb5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,7 +61,7 @@ body {
   }
 
   .header button:hover {
-    background-color: #7328c2;
+    background-color: #00939b;
   }
 
   .info-section {
@@ -83,7 +83,7 @@ body {
   }
 
   .info-box h3 {
-    color: #8a2be2;
+    color: #00adb5;
     margin-bottom: 10px;
   }
 
@@ -96,7 +96,7 @@ body {
   }
 
   .description h3 {
-    color: #8a2be2;
+    color: #00adb5;
     margin-bottom: 10px;
   }
 
