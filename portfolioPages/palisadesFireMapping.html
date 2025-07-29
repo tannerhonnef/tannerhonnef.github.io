@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palisades Fire Damage Mapping</title>
+  <style>
+    
+  </style>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <div class = "navbar" id = "navbar">
+        <nav>
+            <ul>
+                <li><a href = "../index.html">Home</a>   
+                  <a href = "../resume.html">Resume</a>  
+                  <a href ="../portfolio.html">Portfolio</a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../thumbnails/palisadesMapping.png" alt="Project Image">
+      <div class="content">
+        <h1>Determining Building Damange Caused by the Palisades Fire Using Remote Sensing</h1>
+        <h2>Using Planet and Sentinel data to identify buildings destroyed by the Palisades Fire</h2>
+        <button onclick="window.open('../docs/palisadesMapping.pdf')">Report</button>
+    </div>
+
+    <div class="info-section">
+      <div class="info-row">
+        <div class="info-box">
+          <h3>Team Members:</h3>
+          <p>Tanner Honnef and Sanjida Alam</p>
+        </div>
+        <div class="info-box">
+          <h3>Affiliation:</h3>
+          <p>GEOG 382: Advanced Remote Sensing & Conservation Biology Institute</p>
+        </div>
+      </div>
+
+      <div class="description">
+        <h3>Project Description:</h3>
+        <p>The Conservation Biology Institute was seeking a way of identifying damaged and destroyed structures using remote sensing. Under the supervision of Professor John Rogan, we used 3 meter Planet Data and 10 meter Sentinel 2 data to analyze which structures had been destroyed during the Palisades fire in January 2025. CalFire manually documented each structure destroyed by the fire, and we were able to test our methodology for detecting building damage. The Sentinel 2 was helpful for determining the outline of the fire because the Normalized Burn Ratio could be calculated from the Near Infrared and Shortwave Infrared Bands, but this data was too coarse to identify damage to individual buildings. The finer (3 meter) Planet data was used for identifying the change in NDVI for each structure. This imagery was able to identify structures that were desroyed, but it was not able to detect damage to buildings which still had a roof. Normalized Burn Ratio was not used with the Planet data because it does not have a Shortwave Infrared Band.</p>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div style="background-color: #333; color: #d3d3d3; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+        © 2024 Tanner Honnef | GIS Portfolio
+    </p>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+        <a href="mailto:tannerhonnef@gmail.com" style="color: #d3d3d3; text-decoration: none;">Contact Me</a> | 
+        <a href="https://www.linkedin.com/in/tanner-honnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/tannerhonnef" style="color: #d3d3d3; text-decoration: none;" target="_blank">GitHub</a>
+    </p>
+</div>
+</body>
+</html>
